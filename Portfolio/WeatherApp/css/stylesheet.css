@@ -1,0 +1,507 @@
+@import "http://webfonts.ru/import/arnamu.css";
+@import "http://webfonts.ru/import/archivonarrow.css";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: url('../images/back.jpg') no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+article {
+    width: 900px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+}
+
+article #top {
+    background: url('../images/main.jpg') no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 75%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+article #top #location {
+    width: 90%;
+    height: 230px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+article #top #location #city {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    float: left;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Arian AMU';
+    font-size: 40px;
+}
+
+article #top #location #city_point {
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    float: right;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+article #top #location #city_point img {
+    width: 11%;
+    float: right;
+    display: block;
+}
+
+article #top #location #city_point div {
+    width: 100%;
+    float: right;
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Arian AMU';
+    font-size: 18px;
+}
+
+article #top #button {
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    display: block;
+}
+
+article #top #button div {
+    display: block;
+    width: 250px;
+    height: 50px;
+    background: rgba(255, 214, 68, 0.5);
+    float: right;
+    text-align: left;
+    vertical-align: middle;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+article #top #button div:hover {
+    background: rgba(216, 181, 57, 1);
+}
+
+article #top #button div span {
+    text-transform: uppercase;
+    margin-left: 25px;
+    color: #fff;
+    font-family: 'Arian AMU', arial;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+article #top #menu {
+    width: 50%;
+    height: 57px;
+    float: left;
+}
+
+#part_1 i, #part_2 i, #part_3 i {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+article #top #menu #part_1 {
+    width: 33%;
+    height: 92%;
+    float: left;
+    box-shadow: 0 6px 0 #FFF461;
+    line-height: 60px;
+    text-align: right;
+}
+
+article #top #menu #part_1 span {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Archivo Narrow', arial;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+article #top #menu #part_1 span:hover {
+    color: rgba(255, 255, 255, 1);
+    transition-duration: 0.3s;
+}
+
+article #top #menu #part_2 {
+    width: 33%;
+    height: 92%;
+    float: left;
+    box-shadow: 0 6px 0 #9161FF;
+    line-height: 60px;
+    text-align: right;
+}
+
+article #top #menu #part_2 span {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Archivo Narrow', arial;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+article #top #menu #part_2 span:hover {
+    color: rgba(255, 255, 255, 1);
+    transition-duration: 0.3s;
+}
+
+article #top #menu #part_3 {
+    width: 33%;
+    height: 92%;
+    float: left;
+    box-shadow: 0 6px 0 #61D2FF;
+    line-height: 60px;
+    text-align: right;
+}
+
+article #top #menu #part_3 span {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Archivo Narrow', arial;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+article #top #menu #part_3 span:hover {
+    color: rgba(255, 255, 255, 1);
+    transition-duration: 0.3s;
+}
+
+article #bottom {
+    width: 100%;
+    height: 25%;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: table;
+}
+
+article #bottom #mon {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 32%;
+    border-right: 1px solid #585858;
+    color: #fff;
+}
+
+article #bottom #mon #mon_1 {
+    width: 50%;
+    text-align: right;
+    float: left;
+    display: inline-block;
+}
+
+article #bottom #mon #mon_1 #degree {
+    font-size: 80px;
+    font-family: 'Archivo Narrow', sans-serif;
+    width: 100%;
+}
+
+article #bottom #mon #mon_1 #date {
+    width: 75%;
+    height: 24px;
+    line-height: 18px;
+    font-size: 18px;
+    font-family: 'Archivo Narrow', sans-serif;
+    background: rgba(0, 0, 0, 0.2);
+    float: right;
+    text-align: center;
+    border-radius: 15px;
+}
+
+article #bottom #mon #mon_2 {
+    width: 50%;
+    text-align: center;
+    float: right;
+    display: inline-block;
+}
+
+article #bottom #mon #mon_2 #weather {
+    width: 100%;
+    height: 85px;
+    background: url('../images/sunny.png') no-repeat;
+    background-position: center center;
+    background-size: 90px;
+    text-align: center;
+}
+
+article #bottom #mon #mon_2 #windy {
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+}
+
+article #bottom #tue {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 11%;
+    border-right: 1px solid #585858;
+}
+
+article #bottom #tue div {
+    width: 100%;
+    display: inline-block;
+}
+
+article #bottom #tue div #week {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    color: #fff;
+    height: 24px;
+    width: 50px;
+    line-height: 24px;
+}
+
+article #bottom #tue #wth {
+    background: url('../images/rain.png') no-repeat 50% 50%;
+    background-size: 40px;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+article #bottom #tue #temp {
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+article #bottom #wed {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 11%;
+    border-right: 1px solid #585858;
+}
+
+article #bottom #wed div {
+    width: 100%;
+    display: inline-block;
+}
+
+article #bottom #wed div #week {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    color: #fff;
+    height: 24px;
+    width: 50px;
+    line-height: 24px;
+}
+
+article #bottom #wed #wth {
+    background: url('../images/sunny.png') no-repeat 50% 50%;
+    background-size: 40px;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+article #bottom #wed #temp {
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+article #bottom #thu {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 11%;
+    border-right: 1px solid #585858;
+}
+
+article #bottom #thu div {
+    width: 100%;
+    display: inline-block;
+}
+
+article #bottom #thu div #week {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    color: #fff;
+    height: 24px;
+    width: 50px;
+    line-height: 24px;
+}
+
+article #bottom #thu #wth {
+    background: url('../images/cloudy.png') no-repeat 50% 50%;
+    background-size: 40px;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+article #bottom #thu #temp {
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+article #bottom #fri {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 11%;
+    border-right: 1px solid #585858;
+}
+
+article #bottom #fri div {
+    width: 100%;
+    display: inline-block;
+}
+
+article #bottom #fri div #week {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    color: #fff;
+    height: 24px;
+    width: 50px;
+    line-height: 24px;
+}
+
+article #bottom #fri #wth {
+    background: url('../images/sunny.png') no-repeat 50% 50%;
+    background-size: 40px;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+article #bottom #fri #temp {
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+article #bottom #sat {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 11%;
+    border-right: 1px solid #585858;
+}
+
+article #bottom #sat div {
+    width: 100%;
+    display: inline-block;
+}
+
+article #bottom #sat div #week {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    color: #fff;
+    height: 24px;
+    width: 50px;
+    line-height: 24px;
+}
+
+article #bottom #sat #wth {
+    background: url('../images/sunny.png') no-repeat 50% 50%;
+    background-size: 40px;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+article #bottom #sat #temp {
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+article #bottom #sun {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 11%;
+}
+
+article #bottom #sun div {
+    width: 100%;
+    display: inline-block;
+}
+
+article #bottom #sun div #week {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    color: #fff;
+    height: 24px;
+    width: 50px;
+    line-height: 24px;
+}
+
+article #bottom #sun #wth {
+    background: url('../images/rain.png') no-repeat 50% 50%;
+    background-size: 40px;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+article #bottom #sun #temp {
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Archivo Narrow', sans-serif;
+}

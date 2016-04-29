@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Weather Application</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <script type="text/javascript">
+        function time()
+        {
+            var tm=new Date();
+            var h=tm.getHours();
+            var m=tm.getMinutes();
+            var s=tm.getSeconds();
+            m=checkTime(m);
+            document.getElementById('hours').innerHTML=h+":"+m;
+            t=setTimeout('time()',500);
+        }
+        function checkTime(i)
+        {
+            if (i<10)
+            {
+                i="0" + i;
+            }
+            return i;
+        }
+    </script>
+    
+    
+</head>
+<body onload="time()">
+    <article>
+        <section id="top">
+            <div id="location">
+                <div id="city">
+                    Week Weather
+                </div>
+                <div id="city_point">
+                    <img src="images/point.png">
+                    <div>
+                        Saint-Petersburg, RUS<br/>
+                        <span id="hours"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="button">
+                <div onClick="change();">
+                    <span id="wt">Water temperature</span>
+                </div>
+            </div>
+            <div id="menu">
+                <div id="part_1">
+                    <i class="fa fa-cloud" aria-hidden="true"></i><span>Weather</span>
+                </div>
+                <div id="part_2">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i><span>Share</span>
+                </div>
+                <div id="part_3">
+                    <i class="fa fa-info" aria-hidden="true"></i><span>About</span>
+                </div>
+            </div>
+        </section>
+        <section id="bottom">
+            <div id="mon">
+                <div id="mon_1">
+                    <div id="degree"><span>28</span>&deg;</div>
+                    <div id="date">Monday <span>27</span> <sup style="font-size:10px">th</sup></div>
+                </div>
+                <div id="mon_2">
+                    <div id="weather"></div>
+                    <div id="windy">
+                        <span>4</span> mph / <span>60</span> %
+                    </div>
+                </div>
+            </div>
+            <div id="tue">
+                <div>
+                    <div id="week">
+                        TUE
+                    </div>
+                </div>
+                <div id="wth"></div>
+                <div id="temp"><span>+24</span>&deg;</div>
+            </div>
+            <div id="wed">
+                <div>
+                    <div id="week">
+                        WED
+                    </div>
+                </div>
+                <div id="wth"></div>
+                <div id="temp"><span>+25</span>&deg;</div>
+            </div>
+            <div id="thu">
+                <div>
+                    <div id="week">
+                        THU
+                    </div>
+                </div>
+                <div id="wth"></div>
+                <div id="temp"><span>+20</span>&deg;</div>
+            </div>
+            <div id="fri">
+                <div>
+                    <div id="week">
+                        FRI
+                    </div>
+                </div>
+                <div id="wth"></div>
+                <div id="temp"><span>+29</span>&deg;</div>
+            </div>
+            <div id="sat">
+                <div>
+                    <div id="week">
+                        SAT
+                    </div>
+                </div>
+                <div id="wth"></div>
+                <div id="temp"><span>+35</span>&deg;</div>
+            </div>
+            <div id="sun">
+                <div>
+                    <div id="week">
+                        SUN
+                    </div>
+                </div>
+                <div id="wth"></div>
+                <div id="temp"><span>+23</span>&deg;</div>
+            </div>
+        </section>
+    </article>
+    
+<!--    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>-->
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
