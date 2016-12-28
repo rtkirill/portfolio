@@ -1,0 +1,396 @@
+html,
+body {
+    margin: 0;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    padding-top: 1px;
+}
+
+header {
+    background-color: #e8e8e8;
+    margin: auto;
+    width: 70%;
+    height: 33%;
+}
+
+#top {
+    display: table;
+}
+
+.photo,
+.about,
+.print {
+    display: inline-block;
+}
+
+.photo {
+    width: 25%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about {
+    width: 50%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 30px;
+    float: left;
+    position: relative;
+}
+
+.confirm {
+    border: 1px solid #e8e8e8;
+    background-color: inherit;
+    margin-top: 1px;
+
+}
+
+.confirm:first-child {
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
+
+.confirm input {
+    display: inline-block;
+    border: 0;
+    background-color: inherit;
+    width: 85%;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+.confirm:hover {
+    border: 1px solid #bcbcbc;
+}
+
+.confirm div {
+    float: right;
+    width: 15%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 10px;
+    text-align: right;
+    display: none;
+}
+
+.butshow {
+    display: inline-block!important;
+}
+
+.confirm div i {
+    font-size: 1.125em;
+    color: #ebebeb;
+    margin-left: 1px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.confirm:first-child div i {
+    font-size: 1.563em;
+    margin-top: 7px;
+}
+
+.active_input {
+    border: 1px solid #bcbcbc!important;
+    background-color: #fff!important;
+}
+
+.about input.name {
+    font-size: 1.875em;
+    padding-right: 70px;
+}
+
+.about input.geolang {
+    font-weight: bold;
+    color: #454444;
+}
+
+.skills_block {
+    padding-top: 15px;
+    width: 70%;
+}
+
+.skills_block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    margin-left: 3px;
+}
+
+.skills_block ul li {
+    display: inline-block;
+    padding: 7px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.688em;
+    border-radius: 3px;
+    margin-left: 2px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    cursor: pointer;
+    position: relative;
+    margin-top: 2px;
+}
+
+.skills_block ul li:hover {
+    padding: 6px;
+    border-radius: 0;
+}
+
+.skills_block ul li:after {
+    font-family: 'FontAwesome';
+    content: '\f00d';
+    font-size: 0.625em;
+    color: #fff;
+    position: absolute;
+    right: 3px;
+    bottom: 5px;
+    background: #ff5a5a;
+    padding: 3px 4px;
+    border-radius: 100px;
+    opacity: 0;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.skills_block ul li:hover::after{
+    opacity: 1;
+}
+
+.skills_block section {
+    width: 70%;
+    margin-top: 12px;
+    background-color: inherit;
+    border: 1px solid inherit;
+}
+
+.skills_block section input {
+    display: inline-block;
+}
+
+.skills_block section input {
+    background-color: inherit;
+    border: 0;
+    outline: none;
+    width: 50%;
+    padding-left: 5px;
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+}
+
+.skills_block section select {
+    width: 32%;
+    position: relative;
+    top: -2px;
+    display: none;
+}
+
+.skills_block section div {
+    width: 10%;
+    text-align: right;
+    color: #ebebeb;
+    font-size: 1.063em;
+    margin-top: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.active_skill {
+    border: 1px solid #08e819!important;
+    background-color: #fff!important;
+}
+
+.strong {
+    background-color: rgba(0, 0, 0, 1.0);    
+}
+
+.average {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.low {    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.print {
+    height: 100%;
+    width: 25%;
+    float: left;
+    padding: 25px 30px 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.print a {
+    padding: 5px 10px;
+    background: #000000;
+    float: right;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.688em;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+article {
+    width: 70%;
+    height: 66%;
+    margin: auto;
+}
+
+article section {
+    height: 50%;
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+}
+
+.info {
+    display: table-cell;
+    height: 100%;
+    width: 25%;
+    border: 1px solid #e8e8e8;
+    border-top: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: #454444;
+    font-size: 0.9em;
+}
+
+.info header {
+    height: 35%;
+    width: 100%;
+    padding-top: 20px;
+    background: #fff;
+}
+
+.info h3, .time header h3, .env header h3 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.info ul {
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 0;
+    line-height: 1.250em;
+}
+
+.codebg {
+    background: url("/img/code.JPG");
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.codebg header {
+    background: rgba(255,255,255,0.7);
+    margin-bottom: 0;
+}
+
+.time {
+    height: 45%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.time header {
+    width: 100%;
+    padding-top: 20px;
+    background: #fff;
+}
+
+.time h2 {
+    margin: 0;
+    font-size: 2.188em;
+}
+
+.env {
+    height: 55%;
+}
+
+.time header {
+    width: 100%;
+    padding-top: 20px;
+    background: #fff;
+}
+
+.content {
+    width: 100%;
+    height: 65%;
+    position: relative;
+    font-style: italic;
+    padding: 0 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content:before {
+    font-family: "FontAwesome";
+    content: "\f10d";
+    font-size: 1.875em;
+    position: absolute;
+    left: 40px;
+    top: -12px;
+    opacity: 0.1;
+}
+
+.content:after {
+    font-family: "FontAwesome";
+    content: "\f10e";
+    font-size: 1.875em;
+    position: absolute;
+    left: 190px;
+    top: 115px;
+    opacity: 0.1;
+}
+
+.content span {
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -61,7 +61,6 @@
         <div class="row">
             <div class="col-md-10 main-block-scills">
                 <h2>Навыки</h2>
-                <hr class="title_hr">
                 <div class="col-md-4 skill_block">
                     <i class="fa fa-desktop"></i>
                     <h3>Адаптивность</h3>
@@ -87,6 +86,7 @@
                         <li>Javascript</li>
                         <li>JQuery</li>
                         <li>AngularJS</li>
+                        <li>Ajax</li>
                         <li>GIT</li>
                         <li>Adobe Photoshop</li>
                         <li>FTP</li>
@@ -100,7 +100,6 @@
         <div class="row">
             <div class="col-md-10 main-block-portfolio">
                 <h2>Портфолио</h2>
-                <hr class="title_hr">
                 <div class="col-md-4 col-sm-4 portfolio-item">
                     <a href="/Portfolio/Shop01/shop01.html" target="_blank" class="thumbnail">
                         <img data-src="holder.js/100%x305" src="img/r1.jpg" alt="item-1" class="responsive-img">
@@ -137,7 +136,7 @@
                                <h3>Weather</h3>
                                <hr>
                                 <p>
-                                    Статическое web-приложения погоды
+                                    Статическое desktop-приложения погоды
                                 </p>
                             </div>
                         </span>
@@ -149,34 +148,37 @@
 
     <div class="container container-form">
         <div class="row">
-            <div class="col-md-10 main-block-form">
+            <div class="col-md-6 main-block-form">
                 <h2>Обратная связь</h2>
-                <hr class="title_hr">
                 <span class="error-message"></span>
-                <form id="message" class="form-inline">
-                    <div class="form-group">
-                        <input type="text" placeholder="Имя *" name="name" class="error_inp" data-validation="length" data-validation-length="min2">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Email *" name="email" class="error_inp" data-validation="email">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="text" rows="1" placeholder="Сообщение *" class="error_inp" data-validation="required"></textarea>
-                    </div>
-                    <button type="submit">Отправить</button>
+                <form id="message">
+                        <div class="form-group col-xs-12 col-md-6">
+                            <input type="text" placeholder="Имя *" name="name" class="error_inp" data-validation="length" data-validation-length="min2">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-6">
+                            <input type="text" placeholder="Email *" name="email" class="error_inp" data-validation="email">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-12">
+                            <textarea name="text" rows="1" placeholder="Сообщение *" class="error_inp" data-validation="required"></textarea>
+                        </div>
+                        <div class="form-group col-xs-12 col-md-12">
+                            <button>Отправить</button>
+                        </div>
                 </form>
-                <div id="success">Ваше сообщение успешно отправлено...</div>
-                <div class="col-md-12 form-bottom">
-                    &copy; 2016 Tereshchenko Kirill - <a href="#">barziniwork@gmail.com</a>
-                </div>
+                <span id="success">Ваше сообщение успешно отправлено...</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 form-bottom">
+                &copy; 2016 Tereshchenko Kirill - <a href="#">barziniwork@gmail.com</a>
             </div>
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/form-validator/jquery.form-validator.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,5 @@
-<?
-if((isset($_POST['name'])&&$_POST['name']!="") &&
-   (isset($_POST['email'])&&$_POST['email']!="") &&
-   (isset($_POST['text'])&&$_POST['text']!="")){ 
-        $to = 'barziniwork@gmail.ru';
+<?php
+        $to = 'barziniwork@gmail.com';
         $subject = 'УВЕДОМЛЕНИЕ с Вашего сайта';
         $message = '
                 <html>
@@ -16,7 +13,6 @@ if((isset($_POST['name'])&&$_POST['name']!="") &&
                     </body>
                 </html>';
         $headers  = "Content-type: text/html; charset=utf-8 \r\n";
-        $headers .= "From: Отправитель <barziniwork@gmail.ru>\r\n"; 
+        $headers .= "From: Отправитель <work@barzini.com>\r\n"; 
         mail($to, $subject, $message, $headers);
-}
 ?>

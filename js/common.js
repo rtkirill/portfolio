@@ -23,12 +23,13 @@
     }
 
     function sendForm() {
-        $('#message').submit(function () {
+        $('#message').on('submit', function (e) {
+            e.preventDefault();
             var msg = $('#message').serialize();
             $.ajax({
                 type: 'POST',
-                data: msg,
                 url: 'fns.php',
+                data: msg,
                 success: function () {
                     $('#message').fadeTo("slow", 1, function () {
                         this.reset();
@@ -36,7 +37,6 @@
                     });
                 }
             });
-            return false;
         });
     }
 
